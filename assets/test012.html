@@ -2,13 +2,24 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Put your description here.">
 </head>
 
 <body>
-  <img src="img\wallpaper.jpg">
+  <!-- Main landmark added for accessibility -->
+  <main>
+    <!-- Alt attribute added for accessibility and SEO -->
+    <!-- Explicit width and height added to reduce layout shifts (CLS) -->
+    <!-- Use descriptive alt text for the image content -->
+    <img src="img/wallpaper.jpg" 
+         alt="Wallpaper background image" 
+         width="1536" 
+         height="1024"
+         loading="lazy">
+  </main>
 </body>
 
 </html>
