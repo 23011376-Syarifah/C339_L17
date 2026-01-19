@@ -6,8 +6,6 @@
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Put your description here.">
-  <!-- Preload critical image to improve LCP -->
-  <link rel="preload" as="image" href="img/wallpaper-small.jpg">
 </head>
 
 <body>
@@ -15,12 +13,11 @@
   <main>
     <!-- Alt attribute added for accessibility and SEO -->
     <!-- Using smallest optimized image for best performance -->
-    <!-- Removed loading="lazy" and added fetchpriority="high" to prioritize LCP -->
     <img src="img/wallpaper-small.jpg" 
          alt="Wallpaper background image" 
          width="1024" 
          height="683"
-         fetchpriority="high">
+         loading="lazy">
   </main>
 </body>
 
